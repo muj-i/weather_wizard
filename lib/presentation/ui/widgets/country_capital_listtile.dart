@@ -7,7 +7,7 @@ class CountryCapitalsList extends StatelessWidget {
     super.key, required this.capitalName,
    
   });
-  final String capitalName;
+  final String? capitalName;
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class CountryCapitalsList extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                   Text(
-                    capitalName,
+                    capitalName?? 'fdefdjsfv',
                     style: GoogleFonts.poppins(
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
